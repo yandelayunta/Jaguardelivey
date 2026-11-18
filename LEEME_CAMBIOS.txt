@@ -1,0 +1,22 @@
+JAGUAR DELIVERY - VERSION 4 (MENSAJES SIN EMOJIS)
+================================================
+CAMBIO:
+- Se quitaron todos los emojis y simbolos decorativos del mensaje
+  del pedido que se prepara para WhatsApp.
+- Se conserva la informacion: empresa, pedido, monto, forma de pago,
+  nombre, telefono, direccion, referencia y aviso de confirmacion.
+- La web conserva el logo, los colores, las tarjetas con sombra,
+  la portada de temporada y el editor de negocios.
+
+PARA PROBAR:
+1. Extrae este ZIP en una carpeta nueva.
+2. Abre jaguar_delivery/index.html.
+3. Llena un pedido y haz clic en preparar pedido en WhatsApp.
+4. El mensaje debe mostrarse solo con palabras, sin emojis.
+
+SI YA AGREGASTE EMPRESAS Y CARTAS A TU PROPIO datos.js:
+- NO lo reemplaces: conserva tu archivo datos.js.
+- Para aplicar esta correccion, basta con reemplazar app.js
+  (y sw.js si publicaste la web y la instalaste como app).
+- Si esta publicada, sube los archivos actualizados y recarga con Ctrl+F5.
+- WhatsApp requiere que el cliente confirme el envio del mensaje.

@@ -1,0 +1,99 @@
+ACTUALIZACION: EMOJIS Y RECUADROS DESTACADOS (VERSION 3)
+====================================================
+- El mensaje de WhatsApp ahora incorpora emojis construidos mediante Unicode
+  compatible para evitar simbolos de interrogacion al abrir el mensaje.
+- El fondo del catalogo es blanco hueso; las tarjetas de cada negocio tienen
+  bordes mas claros de identificar y sombras visibles, incluso en celulares.
+- Se mantienen la portada editable, el logo, las empresas y el editor.
+- Para ver los cambios en una web YA PUBLICADA, reemplaza index.html,
+  style.css, app.js y sw.js. Tus datos y fotos guardados en datos.js no se
+  modifican, asi que no lo reemplaces si ya cargaste tus propias cartas.
+- Si WhatsApp sigue mostrando signos extraños, cierra WhatsApp Web y vuelve
+  a abrir el enlace de pedido desde la web actualizada; prueba desde un celular.
+
+JAGUAR DELIVERY - VERSIÓN PERSONALIZADA
+=================================
+
+CAMBIOS EN ESTA VERSIÓN
+- Logo original de Jaguar Delivery en la parte superior.
+- Amarillo RGB 248, 194, 0 (#F8C200) y azul tomado del logo (#086DB4).
+- Portada con imagen GENERADA que representa una escena inspirada en Juliaca y un motorizado de delivery. No es una fotografía documental de la ciudad.
+- Nombre: Jaguar Delivery. Ciudad: Juliaca.
+- WhatsApp inicialmente configurado como 969104477. Comprueba que sea el número correcto antes de compartir la página.
+- Editor de negocios, fotos y PORTADA POR TEMPORADA disponible en admin.html.
+- Tres negocios siguen siendo ejemplos hasta que agregues tus cartas reales.
+
+JAGUAR DELIVERY - WEB GRATUITA PARA VARIOS NEGOCIOS
+================================================
+
+¿QUÉ INCLUYE?
+- Catálogo con categorías y buscador.
+- Varios negocios, cada uno con sus propias fotos de carta.
+- Formulario con pedido escrito, monto manual en soles, nombre, celular,
+  dirección, referencia y medio de pago.
+- El botón abre WhatsApp con un mensaje ya redactado al número DEL DELIVERY.
+  El cliente debe pulsar ENVIAR en WhatsApp. No se envía automáticamente.
+- Editor sin programación para agregar empresas, subir cartas y configurar el WhatsApp.
+- Diseño adaptable a celular y manifest para agregar a la pantalla de inicio.
+
+CÓMO PROBAR EN TU PC (WINDOWS)
+1. Descomprime todo el ZIP en una carpeta.
+2. Abre "index.html" con Chrome o Edge. Verás tres empresas DE EJEMPLO.
+3. Abre "admin.html" para cambiar nombre, WhatsApp, portada, negocios y fotos.
+4. Pulsa "Descargar datos.js actualizado".
+5. Reemplaza el "datos.js" original por el archivo recién descargado.
+6. Recarga "index.html" para revisar cómo quedó.
+7. Haz un pedido de prueba desde el celular (o WhatsApp Web).
+
+CÓMO CAMBIAR LA PORTADA PARA NAVIDAD, FIESTAS O PROMOCIONES
+1. Abre admin.html en tu computadora.
+2. Busca "Imagen de portada por temporada".
+3. Pulsa "Elegir nueva portada" y selecciona una imagen horizontal JPG, PNG o WEBP.
+4. Verifica la imagen en la vista previa; pulsa "Descargar datos.js actualizado".
+5. Reemplaza datos.js en la carpeta del sitio (o en GitHub Pages, si ya publicaste).
+6. Abre o actualiza index.html para ver la portada nueva.
+7. Para volver a la imagen de Juliaca, pulsa "Recuperar portada original" y vuelve a descargar datos.js.
+NOTA: Solo se cambia datos.js; no hace falta volver a subir la carpeta assets.
+
+CÓMO PUBLICAR GRATIS CON GITHUB PAGES
+1. Crea una cuenta gratis en https://github.com
+2. Crea un repositorio nuevo y PUBLICO, por ejemplo: jaguar-delivery.
+3. Sube TODOS los archivos de la carpeta: index.html, admin.html,
+   datos.js, style.css, app.js, admin.js, sw.js, manifest.webmanifest
+   y la carpeta assets (con las imágenes).
+4. En el repositorio ve a Settings > Pages.
+5. En Build and deployment elige: Deploy from a branch.
+6. Elige rama "main" y carpeta "/ (root)" y guarda.
+7. La dirección será parecida a:
+   https://TU-USUARIO.github.io/jaguar-delivery/
+8. Cuando cambies cartas, descarga un nuevo datos.js desde admin.html
+   y reemplaza ese archivo en tu repositorio. No necesitas subir todo otra vez.
+
+IMPORTANTE
+- Esta versión no tiene base de datos ni un panel de administración remoto.
+- El editor permite preparar cambios, pero NO publica automáticamente.
+- No hay contraseña de administración. Aunque admin.html esté disponible en
+  internet, no puede cambiar por sí solo la web alojada: solo descarga datos.js.
+- Las cartas de ejemplo son ficticias y sus precios no son reales.
+- Las fotos cargadas se comprimen y se guardan dentro de datos.js; si son
+  muchas puede pesar bastante. Sugerencia: 1-3 cartas por negocio.
+- GitHub Pages gratuito requiere un repositorio público. No subas datos privados.
+- Todos los clientes envían sus mensajes al número que configures.
+- Los pedidos NO quedan guardados en la web; llegan mediante WhatsApp.
+- El costo de envío y el precio se CONFIRMAN con el delivery.
+- Para instalar desde el celular, abre la web publicada en Chrome/Edge y
+  busca "Agregar a pantalla de inicio" en el menú.
+
+Esta solución no requiere servidor de pago, licencia ni plan de WAStore.
+
+
+NUEVO - CARRUSEL DE CARTAS (V5)
+- En la web, abre un negocio y utiliza las flechas izquierda/derecha para recorrer su carta.
+- En el celular también puedes deslizar con el dedo a la derecha o izquierda.
+- Al tocar la imagen se abre ampliada; ahí también hay flechas.
+- La pollería de ejemplo trae 3 páginas para que pruebes la función.
+- En admin.html puedes subir hasta 40 fotos por negocio y ordenarlas con las flechas pequeñas.
+- Para cartas de 24 páginas, sube las imágenes numeradas en orden: 01.jpg, 02.jpg, etc.
+- Los archivos se comprimen para la web, pero 24 fotos grandes pueden producir un datos.js pesado.
+- Si ya personalizaste tu datos.js, consérvalo: con el nuevo index.html, app.js y style.css el carrusel funciona también con tus fotos existentes.
+- Para usar el límite de 40 fotos y los controles de orden, reemplaza también admin.html y admin.js.

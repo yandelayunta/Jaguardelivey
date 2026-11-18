@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#F8C200">
+<title>Jaguar Delivery | Pedidos en Juliaca</title><meta name="description" content="Jaguar Delivery en Juliaca: revisa las cartas de tus negocios favoritos y envía tu pedido por WhatsApp.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="shell topbar-inner"><div class="logo-wrap"><img class="logo logo-brand" src="assets/jaguar-logo.png" alt="Logo de Jaguar Delivery"><div class="brand" id="brand">Jaguar Delivery</div></div><div class="top-right"><span>📍</span><span class="location-pill" id="location">Juliaca, Perú</span></div></div></header>
+<section class="hero"><div class="shell hero-content"><span class="eyebrow"><span class="dot"></span>Jaguar Delivery · Juliaca</span><h1>¿Qué se te antoja<br>pedir hoy?</h1><p id="tagline">Elige tu negocio favorito, revisa su carta y envía tu pedido por WhatsApp.</p><div class="hero-badges"><span>📋 Cartas de cada negocio</span><span>💬 Pedido por WhatsApp</span><span>🛵 Servicio de delivery</span></div></div></section>
+<main class="shell main"><div class="main-head"><div><div class="section-kicker">Explora negocios</div><h2>Encuentra lo que necesitas</h2></div><span class="count" id="count"></span></div><div class="search-row"><input id="search" class="search-input" placeholder="🔎 Buscar pollería, restaurante, farmacia..." aria-label="Buscar negocios"></div><nav class="chip-list" id="categories" aria-label="Filtrar negocios"></nav><div class="cards" id="cards"></div><section class="steps" aria-label="Cómo funciona"><div class="step"><div class="step-icon">🏪</div><strong>1. Elige un negocio</strong><p>Busca entre las empresas disponibles.</p></div><div class="step"><div class="step-icon">📷</div><strong>2. Mira su carta</strong><p>Revisa la foto y escribe tu pedido y monto.</p></div><div class="step"><div class="step-icon">💚</div><strong>3. Envía por WhatsApp</strong><p>Confirma el mensaje en tu WhatsApp.</p></div></section></main>
+<footer class="footer"><div class="shell footer-in"><span id="footerName">Jaguar Delivery</span><span>Los precios y disponibilidad se confirman con el delivery.</span></div></footer>
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="businessTitle"><div class="sheet"><div class="sheet-head"><div><small id="businessCategory">Negocio</small><h2 id="businessTitle">Tu pedido</h2></div><button class="close-btn" id="close" type="button" aria-label="Cerrar">×</button></div><div class="sheet-content"><div class="menu-col"><h3>📸 Carta del negocio</h3><p class="hint">Toca la imagen para verla en grande. Precios sujetos a confirmación.</p><div class="menu-carousel" id="menuCarousel" aria-label="Páginas de la carta">
+ <div class="menu-slide" id="menuSlide">
+  <button class="menu-photo" id="menuPhoto" type="button" aria-label="Ampliar página de carta">
+   <img id="menuImage" alt="Página de la carta" loading="eager">
+   <span class="enlarge-hint">Ampliar imagen</span>
+  </button>
+ </div>
+ <div class="menu-carousel-nav">
+  <button class="carousel-arrow" id="menuPrev" type="button" aria-label="Página anterior de la carta">&#10094;</button>
+  <span class="page-count" id="menuPageCounter" role="status" aria-live="polite">Página 1 de 1</span>
+  <button class="carousel-arrow" id="menuNext" type="button" aria-label="Página siguiente de la carta">&#10095;</button>
+ </div>
+ <p class="swipe-hint" id="swipeHint">También puedes deslizar a izquierda o derecha.</p>
+</div></div><div class="form-col"><h3>✍️ Completa tu pedido</h3><p class="hint">Escribe los productos que aparecen en la carta. El monto lo ingresas tú.</p><form id="orderForm"><div class="form-grid"><div class="field full"><label for="order">Tu pedido <span>*</span></label><textarea id="order" name="order" required maxlength="1500" placeholder="Ej.: 1 pollo entero + papas + 2 gaseosas"></textarea></div><div class="field"><label for="amount">Monto de productos (S/) <span>*</span></label><input id="amount" name="amount" type="number" required min="0.01" max="99999" step="0.01" inputmode="decimal" placeholder="Ej.: 48.00"></div><div class="field"><label for="payment">Forma de pago</label><select id="payment" name="payment"><option>Efectivo</option><option>Yape</option><option>Plin</option><option>Por coordinar</option></select></div><div class="field"><label for="customer">Tu nombre <span>*</span></label><input id="customer" name="customer" required maxlength="100" autocomplete="name" placeholder="Nombre"></div><div class="field"><label for="phone">Tu celular <span>*</span></label><input id="phone" name="phone" type="tel" required maxlength="18" inputmode="tel" autocomplete="tel" placeholder="9XXXXXXXX"></div><div class="field full"><label for="address">Dirección de entrega <span>*</span></label><input id="address" name="address" required maxlength="240" autocomplete="street-address" placeholder="Jr. / Av. / Barrio / N.º"></div><div class="field full"><label for="reference">Referencia (opcional)</label><input id="reference" name="reference" maxlength="220" placeholder="Ej.: frente a la plaza"></div></div><div class="order-summary"><span>Subtotal declarado (sin delivery)</span><b id="subtotal">S/ 0.00</b></div><button class="wa-button" type="submit">💬 Preparar pedido en WhatsApp →</button><p class="note-small">El delivery verificará el precio, el costo del reparto y la disponibilidad. WhatsApp se abrirá con el mensaje listo; deberás tocar «Enviar».</p></form></div></div></div></div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Carta ampliada" tabindex="-1">
+ <button id="zoomClose" class="zoom-close" type="button" aria-label="Cerrar imagen ampliada">&times;</button>
+ <div class="zoom-view" id="zoomView">
+  <button id="zoomPrev" class="zoom-arrow" type="button" aria-label="Página anterior">&#10094;</button>
+  <img alt="Página ampliada de la carta" id="zoomImage">
+  <button id="zoomNext" class="zoom-arrow" type="button" aria-label="Página siguiente">&#10095;</button>
+ </div>
+ <div class="zoom-count" id="zoomPageCounter">Página 1 de 1</div>
+</div><div class="toast" role="status" id="toast"></div>
+<script src="datos.js" charset="utf-8"></script><script src="app.js" charset="utf-8" defer></script>
+</body></html>
